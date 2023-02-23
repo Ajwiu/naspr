@@ -1,0 +1,50 @@
+// zad 1
+// Wypisać liczby podzielne przez 7 od numer_w_dzienniku do numer_w_dzieniku+40
+
+/* let nrWdzienniku = 2
+for (let i = nrWdzienniku; i <= nrWdzienniku + 40; i++) {
+  if (i % 7 == 0) document.write(i + '<br>')
+} /
+
+//zad 2
+/ Zadanie 2
+Z użyciem pętli narysuj figurę z gwiazdek o zadanych ( wczytanych ) wymiarach a i b. (tylko dwie linie) /
+
+/ let a = prompt('podaj wyraz a')
+let b = prompt('podaj wyraz b')
+
+let spacje = ''
+
+for (i = 1; i <= (b.length - 1) / 2; i++) {
+  spacje += '&nbsp;'
+}
+
+for (let i = 1; i <= a.length; i++) {
+  document.write(spacje + '<br>')
+}
+
+let gwiazdki = ''
+for (let i = 1; i <= b.length; i++) {
+  gwiazdki = gwiazdki + ''
+}
+document.write(gwiazdki) /
+
+// zad 3
+// Wczytać dwie liczby do zmiennych szerokosc oraz długosc. Z użyciem pętli podwójnej wypisać punkty
+
+let dlugosc = 3  prompt('podaj długosc ')
+let szerokosc = 4  prompt('podaj szerokość ')
+
+//++++
+// ++++
+//++++
+
+for (let i = 1; i <= dlugosc; i++) {
+  // console.log('*')
+  for (let j = 1; j <= szerokosc; j++) {
+    document.write((${j},${i}))
+  }
+  document.write('<br>')
+}
+// (${j},${i})
+// (i,j)
